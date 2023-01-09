@@ -1,0 +1,28 @@
+{
+  "name": "My Extension",
+  "description": "My Extension Description",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "webNavigation",
+    "webRequest"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://ouo.io/*",
+        "*://ouo.press/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "minimum_chrome_version": "80"
+}
