@@ -1,6 +1,6 @@
 {
-  "name": "My Extension",
-  "description": "My Extension Description",
+  "name": "ADs Skipper",
+  "description": "ADs Skipper Extension for Ouo.io or Ouo.press",
   "version": "1.0",
   "manifest_version": 3,
   "background": {
